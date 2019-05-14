@@ -95,50 +95,45 @@
             <div class="row">
                 <div class="col-sm-6 offset-sm-3">
                     <div class="card" id="home">
-                        <div class="card-header"> Login </div>
+                        <div class="card-header">Sign Up</div>
                         <div class="card-body" style="text-align:center;">
                             <div id="hash-block">
-                                <h5 class="card-title"> Enter login credentials</h5>
+                                <h5 class="card-title"> </h5>
                                 <div id="uploader">
-                                    <form id="file-upload-form" action="http://localhost:3000/login" method="POST">
+                                    <form id="file-upload-form" action="http://localhost:3000/signup" method="POST">
                                         <div id="file-upload-form">
                                             <div class="form-group row">
                                                 <div class="offset-2 col-8">
                                                     <div id="hash-block">
-                                                        <p class="card-title">UserId</p>
                                                         <input id="username" name="username" class="alert alert-secondary"
-                                                            style="width: 100%;">
+                                                            style="width: 100%;" placeholder="Username*">
                                                     </div>
                                                     <div id="hash-block">
-                                                        <p class="card-title">Password</p>
                                                         <input id="username"
                                                          name="password" class="alert alert-secondary"
-                                                            style="width: 100%;">
+                                                            style="width: 100%;", placeholder="Password*">
+                                                    </div>
+                                                    <div id="hash-block">
+                                                        <input id="firstname"
+                                                         name="firstname" class="alert alert-secondary"
+                                                            style="width: 100%;" placeholder="First Name">
+                                                    </div>
+                                                    <div id="hash-block">
+                                                        <input id="lastname"
+                                                         name="lastname" class="alert alert-secondary"
+                                                            style="width: 100%;" placeholder="Last Name">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="offset-2 col-8">
                                                     <button name="submit" id="file-upload-btn" type="submit"
-                                                        class="btn btn-primary" onclick="getStatus();">Verify</button>
+                                                        class="btn btn-primary">Sign Up</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                            </div>
-                            <div id="loading-block" style="display:none">
-                                <div class="alert alert-success">Waiting for Transaction ..</div>
-                                <div class="alert alert-secondary" id="reqidalert" style="display:none;"></div>
-                                <div class="fa-5x">
-                                    <i class="fas fa-sync fa-spin"></i>
-                                </div>
-
-
-                            </div>
-                            <div id="result-block" style="display:none">
-                                <div id="pubsucess"></div>
-                                <div class="alert alert-danger" id="pubfailure"></div>
                             </div>
                         </div>
                     </div>
